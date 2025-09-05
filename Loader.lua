@@ -14,4 +14,5 @@ if not getfenv().script_key then
 end
 
 script_key = getfenv().script_key
-loadstring(game:HttpGet(Place_ID_With_Matching_Luarmor_ID[game.PlaceId]))
+
+loadstring(game:HttpGet(Place_ID_With_Matching_Luarmor_ID[game.PlaceId]))()
