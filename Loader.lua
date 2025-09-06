@@ -9,11 +9,12 @@ if not Place_ID_With_Matching_Luarmor_ID[game.PlaceId] then
     game.Players.LocalPlayer:Kick("Synapse | This game is not supported!")
 end
 
---[[if not getfenv().script_key then
+if not getfenv().script_key then
     game.Players.LocalPlayer:Kick("Synapse | Key not found!")
 end
 
-script_key = getfenv().script_key]]
+script_key = getfenv().script_key
 
 loadstring(game:HttpGet(Place_ID_With_Matching_Luarmor_ID[game.PlaceId]))()
+
 
